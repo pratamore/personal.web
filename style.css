@@ -22,11 +22,6 @@ a{
 
 }
 
-.container:after{
-    content:'';
-    display: block;
-    clear: both;
-}
 
 header h1{
     float: left;
@@ -53,6 +48,11 @@ header ul li a{
 header ul li a:hover{
     background-color: #147C8C;
     color: white;
+}
+
+.icon{
+    font-size: 20px;
+    display: flex;
 }
 /*container*/
 
@@ -279,7 +279,7 @@ form button:hover{
 }
 /*footer*/
 
-@media screen and (max-width: 768px) {
+@media screen and (width: 390px){
     .banner {
         flex-direction: column;
         text-align: center;
@@ -303,8 +303,8 @@ form button:hover{
     }
 
     header ul {
-        float: none;
-        text-align: center;
+        float: right;
+        font-size: 15px;
     }
 
     header ul li {
@@ -323,27 +323,30 @@ form button:hover{
     }
 
     .kotak {
-        width: 80%;
+        width: 50%;
         margin-bottom: 20px;
+        align-content: center;
+        height: 200px;
+        width: 100px;
+        padding: 10px;
     }
 
     .kotak h3 {
-        font-size: 22px;
-    }
-
-    .kotak p {
         font-size: 16px;
     }
 
-    .halaman3{
-        margin-top: 300px;
+    .kotak p {
+        font-size: 14px;
     }
 
-    .halaman4{
-        width: 50%;
+    .formulir{
+    width: 90%;
     }
 
-}
+    form input,
+    form textarea{
+    padding: 3px;
+    } 
 
 /* Additional styles for very small screens (e.g. mobile phones) */
 @media screen and (max-width: 480px) {
